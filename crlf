@@ -1,0 +1,8 @@
+# Forces git to ignore CRLF differences
+#
+# Useful when a team partner with a different OS commits those kind of changes
+# and gits goes nuts because it shows files are changed even if you 'git restore'
+# those files
+
+git rm --cached -r .
+git reset --hard
